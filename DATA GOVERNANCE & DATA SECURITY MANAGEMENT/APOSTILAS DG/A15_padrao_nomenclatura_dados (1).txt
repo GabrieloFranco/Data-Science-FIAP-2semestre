@@ -1,0 +1,139 @@
+******************
+ENTIDADE DE DADOS
+******************
+Classe de objetos (conceitos, coisas, pessoas ou eventos) referentes a uma organização sobre a qual os dados são mantidos.
+
+******************
+ELEMENTO DE DADOS
+******************
+Elemento de dados é um subconjunto de entidade de dados e pode ser definido como uma unidade básica de informação construída sobre estruturas padronizadas tendo um único significado e valores ou unidades distintos. O elemento de dados representa a menor divisão lógica identificável da informação. O Dicionário de Dados Corporativo (DDC) contém o nome lógico padronizado do elemento de dados e seus apelidos (aliases). Deve conter também atributos adicionais do elemento de dados tais como o nome dos sistemas e bancos de dados que usam o elemento de dados.
+
+Os padrões de nomenclatura de elementos de dados criam um nome único de alcance corporativo, ou primário, também chamado de nome lógico padronizado. Apelidos físicos são os nomes requeridos por diferentes programas e linguagens de programação que usam o elemento de dados. Cada linguagem de programação tem seu próprio conjunto de regras de nomenclatura. O apelido também pode ser um outra representação lógica de um elemento de dados em uma aplicação ou em um sistema em particular, como, por exemplo, um nome lógico utilizado em um dicionário de dados de uma aplicação.
+
+********************************************
+A IMPORTANCIA DE UM PADRAO DE NOMENCLATURA
+********************************************
+
+Um conjunto coerente de padrões para nomenclatura de elementos de dados é vital para incrementar o gerenciamento dos dados. Com o desenvolvimento da função de administração de dados dentro da organização uma superintendência centralizada dos dados torna-se possível. Entre as vantagens desta atividade está a redução da redundância de dados através da consolidação de sinônimos e da sobreposição de elementos de dados. Isto pode ser obtido pela aplicação de regras que conduzem à criação de nomes consistentes.
+
+A UTILIDADE DE UM PADRÃO DE NOMENCLATURA
+
+A missão da administração de dados é o gerenciamento dos dados. DADOS SÃO UM RECURSO CORPORATIVO. 
+Não se pode controlar dados que não são identificados. Não se pode identificar dados que não podem ser nomeados. Usado junto com um modelo lógico dos dados um padrão de nomenclatura pode prover grande eficiência na manipulação de dados e menor confusão no significado de um elemento de dados.
+
+O QUE É UM PADRÃO DE NOMENCLATURA
+
+Há duas áreas de concernência da nomenclatura de dados: conteúdo e formato do nome do elemento de dados. Conteúdo refere-se ao significado essencial das palavras escolhidas para nomear o dado; formato se relaciona à estrutura do nome do elemento de dados (seu tamanho, forma e arranjo das palavras no nome do dado).
+
+************************************************
+METODOLOGIA DE NOMENCLATURA DO ELEMENTO DE DADOS
+************************************************
+
+A fórmula básica para nomenclatura lógica de elementos de dados é:
+
+    UMA PALAVRA PRIMITIVA (PW) - descreve o objeto a ser caracterizado
+    UMA PALAVRA DE CLASSE (CW) - descreve o uso ou propósito do elemento de dados
+    UM OU MAIS MODIFICADORES (M) - modificadores da palavra primitiva ou da palavra de classe para tornarem o nome do dado mais significante
+    UM OU DOIS QUALIFICADORES OPCIONAIS DA PALAVRA DE CLASSE (Q) - para outras categorizações da palavra de classe
+
+
+Portanto,
+
+    NOME DO ELEMENTO DE DADOS = PW:[M]:CW:[M]:[Q]
+
+*******************
+PALAVRA DE CLASSE
+*******************
+
+A palavra de classe é o mais importante substantivo no nome do elemento de dados. Ela descreve ou identifica o uso ou propósito do elemento de dados. Palavras de classe designam o tipo de informação mantido sobre o objeto (palavra primitiva) do elemento de dados. Para ajudar a identificar palavras de classe a seguinte pergunta pode ser feita: " QUE TIPO DE INFORMAÇÃO ESTÁ SENDO MANTIDA SOBRE O OBJETO PRIMÁRIO ?"
+
+Exemplo: FUNCIONARIO NOME
+
+O objeto primário descrito é FUNCIONARIO e a palavra NOME descreve o tipo de informação sendo mantido. Para ajudar a determinar a palavra de classe neste exemplo, pode ser feita a pergunta: que tipo de informação está sendo mantido sobre o funcionário ? Para este exemplo a resposta é: o nome do funcionário.
+
+    FUNCIONARIO NOME
+    PW          CW
+
+*******************
+PALAVRA PRIMITIVA
+*******************
+
+A palavra primitiva identifica o objeto ou elemento sendo definido. Normalmente estes objetos representam uma pessoa, lugar, coisa ou evento sobre o qual a organização deseja manter dados. Palavras primitivas podem agir como identificadores primários de pesquisa numa consulta a um banco de dados e prover uma lista de palavras-chave para um esquema de classificação do tipo genérico-a-específico baseado em usos comerciais.
+Para ajudar a identificar palavras primitivas as seguintes questões podem ser feitas: "O QUE ESTÁ SENDO DESCRITO ?" e "A QUÊ A PALAVRA DE CLASSE SE APLICA ?"
+
+Exemplo: UNIDADE ADMINISTATIVA IDENTIFICADOR
+
+O objeto primário é UNIDADE ADMINISTRATIVA. A palavra IDENTIFICADOR descreve o tipo de informação sendo mantida. Para ajudar a determinar a palavra primitiva neste exemplo, as seguintes perguntas podem ser feitas: palavras de classe do quê ? 
+Identificador do quê ? Para este exemplo  a resposta é: identificador da unidade.
+
+UNIDADE ADMINISTATIVA   IDENTIFICADOR
+PW      M               CW   
+
+*******************************
+MODIFICADORES E QUALIFICADORES
+*******************************
+
+Um modificador dá uma informação adicional sobre a palavra primitiva ou a palavra de classe. Modificadores podem ser substantivos ou adjetivos. Um qualificador é um tipo especial de modificador utilizado para descrever uma característica da palavra de classe com um domínio de valores ou tipo de informações que podem ser anexadas ao objeto. Exemplos de qualificadores incluem unidades específicas de medida. O  número máximo de qualificadores permitidos para descrever uma palavra de classe são dois. Assim, o nome do elemento de dados não pode superar NOVE PALAVRAS.
+Para ajudar a identificar modificadores as seguintes perguntas podem ser feitas: "QUE TIPO DE [PALAVRA DE CLASSE] ?" e "QUE TIPO DE [PALAVRA PRIMÁRIA] ?"
+
+Ao requerer que o nome do elemento de dados tenha apenas uma Palavra Primitiva o elemento de dados é condicionado a descrever APENAS UM  CONCEITO (coesão). Ao restringir o nome do elemento de dados para ter apenas uma Palavra de Classe o elemento de dados é condicionado a ter APENAS UM USO ou significado (integridade).
+
+**********************************************
+REGRAS DE PADRONIZAÇÃO DOS ELEMENTOS DE DADOS
+**********************************************
+O desenvolvimento de boas definições é fundamental para o desenvolvimento de nomes significativos. A definição de um elemento de dados é baseada em características lógicas, não físicas. Isto significa que a definição deve refletir o propósito do elemento de dado, isto é, O QUE O ELEMENTO É, mais do que como, onde e quando ele é utilizado. Elementos de dados devem ser independentes de hardware, software ou da organização que usa o dado. Elementos de dados definidos desta maneira podem ser utilizados por outras organizações ou outras aplicações além daquelas para as quais foram originalmente definidas. Isto é um requisito essencial para suportar a estratégia de futuro onde os dados deverão ser compartilhados o máximo possível entre organizações e aplicacões. Para suportar esse requisito, as seguintes regras devem ser utilizadas para construir definições de elementos de dados:
+
+1) Cada elemento de dado deve ter uma definição breve, precisa e compreensível;
+
+2) A definição deve ter um significado bastante diferente da de qualquer outro elemento de dados;
+
+3) A definição de um elemento de dado deve ter apenas uma interpretação aceitável;
+
+4) Termos significativos que possuam conotações diferentes precisam ter seu uso claramente explicado na definição;
+
+5) A definição de um elemento de dados deve ter uma interpretação funcional correta, escrita em uma linguagem comumente utilizada;
+
+6) Termos funcionalmente familiares mas que não indiquem literalmente o que o elemento de dados é ou que possam ser incomuns para usuários em potencial devem ser evitados;
+
+7) Utilizar linguagem precisa, consistente e gramaticalmente correta e evitar usar expressões regionais ou repetitivas;
+
+8) Não desenvolver definições restritivas para um dado que possa vir a ser utilizado em outras atividades, organizações, funções etc. Embora a preocupação principal seja com o uso do elemento de dados em um sistema, deve haver consideração com outros usuários que possam requerer a mesma aplicação do elemento de dados ou uma variação dela;
+
+9) Caso a inclusão de uma informação restritiva na definição seja requerida, a informação restritiva deve ser precedida pela abreviação "e.g." para citar o exemplo do uso da informação restritiva, ou "i.e." para explicar o uso da informação restritiva;
+
+10) Elementos de dados são lógicos, mais que físicos. As definições devem estabelecer o que o elemento de dado é e não como, onde ou quando ele é utilizado;
+
+11) Não incluir critérios de processamento ou edição na definição;
+
+12) O nome atual do elemento de dados não precisa ser repetido na sua definição;
+
+13) A Palavra de Classe precisa aparecer no texto da definição.
+
+
+**********************************************
+REGRAS DE NOMEAÇÃO DOS ELEMENTOS DE DADOS
+**********************************************
+1) O nome do elemento de dados deve derivar da definição do elemento de dados. Se possível, desenvolver a definição usando uma sentença simples e única. O nome do elemento de dados deve refletir o conteúdo da definição;
+
+2) Palavras de Classe são reservadas e não podem ser utilizadas como modificadores ou Palavras Primitivas;
+
+3) O nome de um elemento de dados deve ter sua Palavra de Classe obtida de uma lista pré-definida, que pode ser acrescida de novas Palavras de Classe após aprovação do Administrador de Dados;
+
+4) O nome de um elemento de dados deve ter sua Palavra Primitiva obtida de uma lista pré-definida, e deve ser posicionada como a primeira palavra do nome do elemento de dados. Novas Palavras Primitivas podem ser adicionadas à lista sob aprovação do AD;
+
+5) O nome de um elemento de dados deve conter um número suficiente de modificadores e qualificadores para descrevê-lo (até quatro modificadores para a Palavra Primária e um modificador e até dois qualificadores para a Palavra de Classe);
+
+6) PW + (1-4)[M] + CW + [M] + (1-2)[Q]
+
+7) O nome do elemento de dados não pode conter artigos, conjunções ou preposições. Não é permitido utilizar plural nas Palavras primitivas ou nas de classe;
+
+8) Abreviações ou acrônimos não devem ser utilizados, exceto se: 1) o nome do elemento de dados ultrapassar 250 caracteres; ou 2) a abreviação ou o acrônimos são tão comumente utilizados no lugar da expressão completa que a expressão é melhor compreendida em sua forma abreviada;
+
+9) Somente caracteres alfanuméricos são permitidos para criar as palavras do nome do elemento de dados, com espaços em branco utilizados  para separar as palavras do nome. O hífen é permitido somente para criar novas palavras necessárias para representar o significado exato do elemento de dados. Os números não podem ser usados como o primeiro caracter da palavra no nome do elemento de dados;
+
+10) Títulos de blocos, linhas ou cabeçalhos de planilhas não devem ser utilizados como nomes de elementos de dados a não ser que estes títulos atendam completamente aos requisitos de nomenclatura de um elemento de dados;
+
+11) Números de versão de produtos não devem ser utilizados em nomes de entidade de dados porque estão sujeitos a mudanças;
+
+12) O nome de um elemento de dados não deve referenciar um computador, sistema ou uma organização específica.
+
