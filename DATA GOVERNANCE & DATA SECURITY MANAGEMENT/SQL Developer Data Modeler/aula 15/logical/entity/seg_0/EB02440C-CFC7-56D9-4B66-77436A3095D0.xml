@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EB02440C-CFC7-56D9-4B66-77436A3095D0" name="PROJETO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-08-21 22:29:14 UTC</createdTime>
+<ownerDesignName>aula 15</ownerDesignName>
+<engineerTo>
+<item key="BA6AC017-8BFF-43F2-D0B0-78053C115ED9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>PROJETO</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_PROJETO" id="6834C89E-A547-2339-BE89-C25D92CE3C44">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-08-21 22:30:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador unico do Projeto, gerado automaticamente]]></commentInRDBMS>
+<ownerDesignName>aula 15</ownerDesignName>
+<engineerTo>
+<item key="BA6AC017-8BFF-43F2-D0B0-78053C115ED9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_PROJETO" id="6AD5E2C9-7274-1F04-C728-D7FA6B55A122">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-08-21 22:35:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[nome do projeto]]></commentInRDBMS>
+<ownerDesignName>aula 15</ownerDesignName>
+<engineerTo>
+<item key="BA6AC017-8BFF-43F2-D0B0-78053C115ED9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_PROJETO" id="0EB72B6F-D441-8AD1-6E93-A85F0CE2B97B">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-08-21 22:41:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do projeto.]]></commentInRDBMS>
+<ownerDesignName>aula 15</ownerDesignName>
+<engineerTo>
+<item key="BA6AC017-8BFF-43F2-D0B0-78053C115ED9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 CHAR</dataTypeSize>
+<ownDataTypeParameters>500 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_INSERCAO" id="4267B507-D6F2-F47F-F2F8-9D5812791BE1">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-08-21 22:45:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de inserção do projeto no sistema.]]></commentInRDBMS>
+<ownerDesignName>aula 15</ownerDesignName>
+<engineerTo>
+<item key="BA6AC017-8BFF-43F2-D0B0-78053C115ED9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IC_ATIVO" id="EFA19C82-A8B0-7FF1-A947-99E90882C127">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-08-21 22:46:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Status de atividade do projeto. 1 – Ativo, 0 – Inativo.]]></commentInRDBMS>
+<ownerDesignName>aula 15</ownerDesignName>
+<engineerTo>
+<item key="BA6AC017-8BFF-43F2-D0B0-78053C115ED9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>
