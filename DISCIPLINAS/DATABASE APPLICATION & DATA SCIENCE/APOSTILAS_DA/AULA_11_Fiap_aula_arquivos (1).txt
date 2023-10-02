@@ -1,0 +1,11 @@
+NumeroNF Loja Produto Vendedor ValorUnitario Quantidade ValorTotal Data
+1 Ouro ShampooScoobyDoo Marina 25 3 69 21/03/2020
+2 Plus BiscoitoChampion João 21 2 42 28/08/2019
+3 Ouro CamaMédia Gustavo 45 2 90 19/05/2019
+4 Plus FlexGrande Adriana 21 6 120 02/02/2020
+5 Ouro BolaVinil Yuri 4 3 12 03/03/2020
+6 Plus MordedorCordaBola Marina 16 4 64 22/04/2020
+7 Plus GatoPena João 9 5 45 02/04/2020
+8 Ouro VitaminaEGranulado Gustavo 13 3 39 13/03/2020
+9 Ouro Roupaparagato Adriana 25 5 125 21/03/2020
+10 Plus BiscoitoChampion Yuri 21 2 42 28/08/2019
